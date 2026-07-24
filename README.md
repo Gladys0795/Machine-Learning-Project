@@ -1,2 +1,10 @@
-# Machine-Learning-Project
-This repository is mainly for our team's project for machine learning
+*Team Members*
+- Gladys Genista Tchokogoueko Ngadjui
+- Hansel Veigas
+- Kanika Sethi
+- Krishna Priya
+- Teena Elvisha Ferrao
+
+* Tasks Allocation*
+* TBC before the next class
+
