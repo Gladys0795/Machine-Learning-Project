@@ -1,32 +1,36 @@
 ** 🥗FOOD SPOILAGE PREDICTION USING MACHINE LEARNING**
 
 ** 📖PROJEECT OVERVIEW**
-Food spoilage is a significant contributor to food waste and poses serious health risks when spoiled food is consumed. This food waste equally create a significant financial losses to consumers and businesses hence, this project aims to apply machine learning techniques to analyse food storage conditions and spoilage characteristics to predict the risk of food spoilage.
+Food spoilage is a significant contributor to food waste and poses serious health risks when spoiled food is consumed. In addition to the public health concerns, food spoilage creates substantial financial losses to consumers, businesses and the food industry at large due to unecessary disposal of food products and inefficient management of inventory. 
 
-The project explores relationships between storage temperature, storage duration, food category, spoilage indicators, and food safety guidelines to build predictive models that assist consumers and food handlers in making informed food safety decisions.
+This project aims to develop a machine learning model that predicts the risk of food spoilage based on key factors such as food category, storage temperature, storage duration, food safety guidelines and spoilage characteristics.By analysing the relationships between these variables, the project aims to identify the key factors that contribute to food spoilage and classify the food products according to their likelihood of becoming unsafe for consumption.
+
+This predictive model is intended to support retailers and food industry businesses in ameliorating inventory management, enhancing compliance to food safety via data driven decisions and ultimately reducing operational losses due to food spoilage.
 
 ** 🎯PROBLEM DEFINITION**
-Food spoilage causes millions of tonnes of food waste annually which increases the risk of foodborne illnesses and losses to both consumers and businesses. Many consumers struggle to determine whether or not food is still safe to consume based on storage condition, expiry dates and visible spoilage signs. Businesses also face challenges in monitoring inventory quality, reducing waste, and managing stock efficiently.
+Food spoilage is a major challenge causing millions of tonnes of food waste annually which increasing economic losses for businesses while creating potential food safety risks for consumers. Many retailers, restaurants and households often mainly rely on manual inspection, expiry dates and visible signs to ascertain whether food items are suitable for consumption. However, these approaches may be subjective , inconsistent and may fail to identify early signs of food spoilage.
 
-Traditional methods rely on manual inspections, which can be subjective and inconsistent. A machine learning approach can improve decision-making for both stakeholders by identifying features and patterns within historical food safety data.
+From a business perspective, inaccurate prediction of food quality deterioration may result to unecessary waste, inefficient inventory management, high operational costs and possible food safety incidents. Consumers are also indecisive on whether food is safe for consumption based on the limited information such as storing instructions, expiration dates and appearance. 
+
+Hence, this project seeks to develop a machine learning model capable of predicting food spoilage risks by analysing important factors such as storage conditions, food characteristics among others. The model will provide relevant insights that can support consumers and businesses in reducing avoidable waste, optimising inventory management and enhnace food safety decisions. 
 
 ** 🚀PROJECT GOAL**
-The primary goal of this project is to develop a machine learning model capable of predicting the spoilage risk of food items based on their storage conditions and characteristics.
+The primary goal of this project is to develop a machine learning model capable of predicting the spoilage risk of food items based on their storage conditions and characteristics. By analysing these factors, the model aims to identify food items that are of high risk of spoilage before they before unsafe for consumption. 
 
 The project also aims to:
 
-- Reduce food waste
-- Improve food safety awareness
-- Help consumers make safer decisions
-- Enable businesses to improve inventory management and reduce unecessary food waste
-- Support data-driven food storage decisions 
-- Demonstrate an end-to-end machine learning workflow
+- Reduce food waste by supporting earlier identification of food items likely to spoil.
+- Improve food safety awareness by helping consumers and buisnesses to make the informed and safer decisions relating to food storage and consumption.
+- Support inventory management by prompting businesses to prioritise stock/inventory based on predictive spoilage risks thereby reducing operational losses.
+- Promote  data-driven decisions in food storage and supply chain management.
+- Compare the performance of several machine learning algorithms to determine the most effective model for food spoilage prediction.
+- Demonstrate an end-to-end machine learning workflow.
 
 **❓RESEARCH QUESTIONS**
 This project investigates the following research questions:
 
 - How does storage temperature influence food spoilage?
-- Which food categories have the highest spoilage risk?
+- Which food products have the highest spoilage risk?
 - Can spoilage risk be accurately predicted using machine learning?
 - Which storage-related features contribute most to spoilage prediction?
 - Which machine learning algorithm provides the best predictive performance?
@@ -61,16 +65,29 @@ The project follows a standard machine learning pipeline:
 - Model Deployment
 
 ** 🤖MACHINE LEARNING TASKS**
-The primary machine learning task is: Classification
+The primary machine learning task in this study is classification. The objecctive is to develop predictive models capable of classiying food items into predefined spoilage risl categories. 
 
-The model predicts the spoilage risk category of a food item.
+To support with the classification task, the study will involve the follwoing machine learning and data analysis activities: 
 
-Additional tasks may include:
-
-- Data visualisation
-- Feature importance analysis
-- Model comparison
-- Performance evaluation
+* Data Pre-processing
+  - Handle missing values, duplicate records and encode categorical variables
+  - Scale or normalise numeriacl features
+* Explanatory Data Analysis (EDA)
+  - Analys data distributions
+  - Visualise relationships between features and spoilage risks
+* Feature Engineering
+  - Select the most relevant variables for the model training
+  - Create new predictive features if required
+* Feature importance analysis
+  - Identify the variables that contribute most to spoilage prediction using techniques such as Random Forest feature importance or SHAP values
+* Model Development
+  - Train multiple classification algorithms
+* Model comparison
+  - Compare the predictive performance of different machine learning algorithms to identify the best-performing model
+* Performance evaluation
+  - Evaluate models using appropriate classification metrics
+* Business Interpretation
+  - Interpret the model results and provide recommendations that help food manufacturers, retailers, or supply chain managers reduce spoilage, minimise waste, and improve inventory management.
 
 **🧠MACHINE LEARNING MODEL**
 Several supervised learning algorithms will be evaluated, including:
@@ -79,11 +96,7 @@ Several supervised learning algorithms will be evaluated, including:
 - Decision Tree
 - Random Forest
 - Support Vector Machine (SVM)
-- K-Nearest Neighbours (KNN)
-- Gradient Boosting
-- XGBoost (optional)
-
-Performance will be compared using evaluation metrics to identify the best-performing model.
+- XGBoost 
 
 **📈EXPECTED OUTCOME**
 The expected outcomes from this project include:
