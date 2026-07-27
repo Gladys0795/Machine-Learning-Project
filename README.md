@@ -26,14 +26,8 @@ The project also aims to:
 - Compare the performance of several machine learning algorithms to determine the most effective model for food spoilage prediction.
 - Demonstrate an end-to-end machine learning workflow.
 
-**❓RESEARCH QUESTIONS**
-This project investigates the following research questions:
-
-- How does storage temperature influence food spoilage?
-- Which food products have the highest spoilage risk?
-- Can spoilage risk be accurately predicted using machine learning?
-- Which storage-related features contribute most to spoilage prediction?
-- Which machine learning algorithm provides the best predictive performance?
+**❓RESEARCH QUESTION**
+Can machine learning accurately predict food spoilage risk to support inventory management and reduce food waste in the food supply chain?
 
 ** 📊ABOUT THE DATASET**
 The dataset contains information describing food storage recommendations and spoilage characteristics.
