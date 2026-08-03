@@ -17,18 +17,24 @@ Original Records: **100,000**
 Original Features:**42**
 
 Missing Values: **None**
+
 Dataset Used: **Cleaned & Balanced**
+
 Final Records: **38,884**
+
 Target Variable: **was_spoiled**
 
 Target Variable: 
-    **0	- Not Spoiled**
-    **1 - Spoiled**
+
+**0	- Not Spoiled**
+   
+**1 - Spoiled**
 
 The balanced dataset contains:
-  **19,442 Spoiled products**
-  **19,442 Non-spoiled products**
-  **50:50 class distribution**
+
+**19,442 Spoiled products**
+**19,442 Non-spoiled products**
+**50:50 class distribution**
 
 **Selected Features**
 
