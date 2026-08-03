@@ -1,22 +1,23 @@
-** 🥗FOOD SPOILAGE RISK PREDICTION USING MACHINE LEARNING**
+**FOOD SPOILAGE RISK PREDICTION USING MACHINE LEARNING**
 
-** 📖PROJEECT OVERVIEW**
+**PROJECT OVERVIEW**
 
-Food spoilage is a significant contributor to food waste and a source of significant financial losses across perishable goods supply chain. Retailers lose margins from marked-down, unsold products and discarded stock while poor visibility of spoilage risks leads to inefficient inventory and replenishment decisions. 
+Food spoilage is a significant contributor to food waste and a source of significant financial losses across the perishable goods supply chain. Retailers lose margins from marked-down, unsold products and discarded stock, while poor visibility of spoilage risks leads to inefficient inventory and replenishment decisions. 
 
-This project develops a machine learning model that predicts the spoilage risk of perishable products from storage, handling, packaging and product characteristics recorded at the point of purchase. The dataset used is perishable_goods_management.csv, a retail-transaction dataset of 100,000 records across 42 variables covering ten product categories (Bakery, Beverages, Dairy, Deli, Frozen Meals, Meat, Pharmaceuticals, Produce, Ready-to-Eat and Seafood) and five US regions.
-The continuous variable spoilage_risk (range 0.05-0.47, mean 0.20) is used as the risk indicator. It is binned into three ordinal classes: Low, Medium and High - using tercile thresholds, so the task is framed as a multi-class classification problem. A regression formulation on the raw score is retained as an optional extension. The model is intended to help retailers and supply-chain managers prioritise at-risk stock, reduce avoidable waste and improve food-safety decisions.
+This project develops a machine learning model that predicts the spoilage risk of perishable products from storage, handling, packaging and product characteristics recorded at the point of purchase. The dataset used is perishable_goods_management.csv, a retail-transaction dataset of **100,000** records across **42** variables covering ten product categories (Bakery, Beverages, Dairy, Deli, Frozen Meals, Meat, Pharmaceuticals, Produce, Ready-to-Eat and Seafood) and five US regions.
 
-** 🎯PROBLEM DEFINITION** 
+The continuous variable **spoilage_risk (range 0.05-0.47, mean 0.20)** is used as the risk indicator. It is binned into three ordinal classes: **Low, Medium and High** using tercile thresholds, so the task is framed as a multi-class classification problem. A regression formulation on the raw score is retained as an optional extension. The model is intended to help retailers and supply-chain managers prioritise at-risk stock, reduce avoidable waste and improve food-safety decisions.
 
-Retailers mostly rely on fixed expiry dates and manual inspection to judge whether perishable stock is at risk. These approaches are subjective, applied late, and do not combine the many other operational factors - storage temperature deviation, handling quality, packaging quality, distribution time, product sensitivity - that jointly determine how quickly an item deteriorates.
+**PROBLEM DEFINITION** 
 
-The business consequence is measurable waste and lost margin: in this dataset 19.4% of records were ultimately spoiled and mean waste reaches 38% of units for spoiled items. A model that estimates spoilage risk from information available at or before purchase would let businesses react earlier (markdown, redistribution, prioritised sale) instead of reacting after loss has occurred.
+Retailers mostly rely on fixed expiry dates and manual inspection to judge whether perishable stock is at risk. These approaches are subjective, applied late, and do not combine the many other operational factors: storage temperature deviation, handling quality, packaging quality, distribution time, product sensitivity that jointly determine how quickly an item deteriorates.
+
+The business consequence is measurable waste and lost margin: in this dataset, 19.4% of records were ultimately spoiled and mean waste reaches 38% of units for spoiled items. A model that estimates spoilage risk from information available at or before purchase would let businesses react earlier (markdown, redistribution, prioritised sale) instead of reacting after loss has occurred.
 
 This project therefore develops a classification model that predicts the spoilage risk level of a perishable item from its storage and handling conditions and product attributes, using only features that are known before the sales outcome is realised.
 
 
-** 🚀PROJECT GOAL**
+**PROJECT GOAL**
 
 The primary goal of this project is to develop and evaluate machine learning models that classify perishable items into Low, Medium or High spoilage-risk categories. The project also aims to: 
 
@@ -26,11 +27,11 @@ The primary goal of this project is to develop and evaluate machine learning mod
 - Compare several machine learning algorithms and select the most effective one.
 - Demonstrate a complete, leakage-aware, end-to-end machine learning workflow.
 
-**❓RESEARCH QUESTION**
+**RESEARCH QUESTION**
 
-Can machine learning accurately predict the spoilage risk level of perishable retail products from storage, handling and product features by using only information available before the sales outcome to support inventory management and reduce food waste?
+Can machine learning accurately predict the spoilage risk level of perishable retail products from storage, handling, and product features by using only information available before the sales outcome to support inventory management and reduce food waste?
 
-** 📊ABOUT THE DATASET**
+**ABOUT THE DATASET**
 
 File: synthetically generated |  Rows: 100,000  |  Columns: 42  |  No missing values.
 
@@ -53,11 +54,11 @@ The target used for modelling is spoilage_risk (continuous), binned into the ord
 •	day_of_week, is_weekend, month - temporal context.
 •	base_price, cost_price, initial_quantity, supplier_score - product/supplier context.
 
-***Decision variables (exclude - taken after risk is assessed)**:
+***Decision variables (exclude, taken after risk is assessed)**:
 
 •	markdown_applied, discount_pct, selling_price, is_promoted (pricing actions that are themselves responses to perceived risk).
 
-***Outcome / leakage variables (must NOT be used as predictors)***:
+***Outcome/leakage variables (must NOT be used as predictors)***:
 
 •	was_spoiled, quality_grade, units_sold, units_wasted, waste_pct, waste_cost, revenue, profit, profit_margin_pct (all realised after the sales period and hence unavailable at prediction time).
 
@@ -74,7 +75,7 @@ Note: identifier columns (record_id, product_id, product_name, store_id, supplie
 7.	Stratified train/validation/test split and cross-validation.
 8.	Model selection and training.
 9.	Model comparison and evaluation (multi-class metrics).
-10.	Model improvement (hyper-parameter tuning, class-imbalance handling).
+10.	Model improvement (hyperparameter tuning, class-imbalance handling).
 11.	Business interpretation and recommendations.
 
 ** 🤖MACHINE LEARNING TASKS**
@@ -82,7 +83,7 @@ Note: identifier columns (record_id, product_id, product_name, store_id, supplie
 The primary task is multi-class classification of spoilage-risk level. Supporting activities include:
 
 Data pre-processing
-•	Verify there are no missing values; remove exact duplicates if present.
+•	Verify there are no missing values, remove exact duplicates if present.
 •	One-hot encode categorical variables (category, region).
 •	Scale numeric features for scale-sensitive models (e.g. Logistic Regression, SVM).
 Exploratory Data Analysis
@@ -91,14 +92,14 @@ Exploratory Data Analysis
 Feature engineering & importance
 •	Apply the leakage audit to keep only pre-outcome predictors.
 • Create new features if required	
-•	Identify key drivers via correlation, Random Forest importance and SHAP.
+•	Identify key drivers via correlation, Random Forest importance, and SHAP.
 Model development, comparison & evaluation
 •	Train multiple classifiers and compare them on a held-out test set.
 •	Evaluate with class-aware metrics and inspect the confusion matrix.
 Business interpretation
-•	Translate results into recommendations on storage, handling and packaging.
+•	Translate results into recommendations on storage, handling, and packaging.
 
-**🧠MACHINE LEARNING MODEL**
+**MACHINE LEARNING MODEL**
 
 Several supervised learning algorithms will be evaluated, including:
 
@@ -112,12 +113,12 @@ A majority-class baseline (DummyClassifier) is included as a reference floor: a 
 
 **VALIDATION STRATEGY 6 CLASS IMBALANCE**
 
-•	Split the data into stratified train (70%), validation (15%) and test (15%) sets so class proportions are preserved.
-•	Use stratified k-fold cross-validation on the training set for model selection and hyper-parameter tuning.
-•	With tercile binning the classes are near-balanced.
+•	Split the data into stratified train (70%), validation (15%), and test (15%) sets so class proportions are preserved.
+•	Use stratified k-fold cross-validation on the training set for model selection and hyperparameter tuning.
+•	With tercile binning, the classes are near-balanced.
 •	Fit all pre-processing (scaling, encoding) inside a Pipeline on training data only to avoid information leakage from the test set.
 
-**📊EVALUATION METRICS**
+**EVALUATION METRICS**
 
 The classification models will be evaluated using:
 
@@ -128,7 +129,7 @@ The classification models will be evaluated using:
 - Confusion Matrix
 - ROC-AUC
 
-**📈EXPECTED OUTCOME**
+**EXPECTED OUTCOME**
 
 The expected outcomes from this project include:
 
@@ -136,7 +137,7 @@ The expected outcomes from this project include:
 - Exploratory data analysis with visualisations
 - A validated multi-class spoilage risk prediction model that beats the baseline
 - Identification of key factors influencing spoilage risk
-- Recommendations for storage, handling and packaging practices
+- Recommendations for storage, handling, and packaging practices
 
 **TEAM MEMBERS**
 
@@ -154,7 +155,7 @@ Kanika Sethi: statistical analysis, correlation, feature engineering
 Hansel Veigas: ML model development, training and comparison
 Teena Elvisha Ferrao: model evaluation, feature importance analysis, final report and presentation
 
-**🛠️TECHNOLOGY USED**
+**TECHNOLOGY USED**
 
 Programming Language: Python 3
 Libraries: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, XGBoost, SHAP
