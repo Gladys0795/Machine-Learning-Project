@@ -103,39 +103,39 @@ Removing these variables prevents data leakage, allowing the model to learn only
 
 The notebook follows these stages:
 
-  Data Collection
+        Data Collection
   
-  Data Cleaning
+        Data Cleaning
   
-  Exploratory Data Analysis (EDA)
+        Exploratory Data Analysis (EDA)
   
-  Statistical Analysis
+        Statistical Analysis
   
-  Feature Engineering
+        Feature Engineering
  
-  Data Preprocessing
+        Data Preprocessing
  
-  Train / Validation / Test Split
+        Train / Validation / Test Split
   
-  Model Training
+        Model Training
   
-  Model Evaluation
+        Model Evaluation
 
 **Exploratory Data Analysis**
 
 The project includes visualizations such as:
 
-  Target variable distribution
+      Target variable distribution
   
-  Feature distributions
+      Feature distributions
   
-  Correlation heatmap
+      Correlation heatmap
   
-  Boxplots
+      Boxplots
   
-  Histograms
+      Histograms
   
-  Count plots  
+      Count plots  
 
 **Machine Learning Models**
 
@@ -149,13 +149,13 @@ The following supervised learning algorithms are evaluated:
 
 Models are compared using:
 
-  Accuracy
+        Accuracy
  
-  Precision
+        Precision
  
-  Recall
+        Recall
   
-  F1-Score
+        F1-Score
 
 **TEAM MEMBERS**
 
@@ -167,15 +167,15 @@ Models are compared using:
 
 **TASKS ALLOCATION**
 
-      Gladys Ngadjui: data collection and cleaning
+            Gladys Ngadjui: data collection and cleaning
     
-      Krishna Priya: data pre-processing, EDA, data visualisation
+            Krishna Priya: data pre-processing, EDA, data visualisation
      
-      Kanika Sethi: statistical analysis, correlation, feature engineering 
+            Kanika Sethi: statistical analysis, correlation, feature engineering 
       
-      Hansel Veigas: ML model development, training and comparison
+            Hansel Veigas: ML model development, training and comparison
       
-      Teena Elvisha Ferrao: model evaluation, feature importance analysis, final report and presentation
+            Teena Elvisha Ferrao: model evaluation, feature importance analysis, final report and presentation
 
 **TECHNOLOGY USED**
 
