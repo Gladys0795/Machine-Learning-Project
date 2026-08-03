@@ -32,27 +32,43 @@ The original dataset is a synthetically generated retail dataset containing info
 
 The balanced dataset contains:
 
-**19,442 Spoiled products**
-**19,442 Non-spoiled products**
-**50:50 class distribution**
+      **19,442 Spoiled products**
+      
+      **19,442 Non-spoiled products**
+      
+      **50:50 class distribution**
 
 **Selected Features**
 
 The model uses only information available before spoilage occurs.
     'category',
+    
     'region',
+   
     'shelf_life_days',
+   
     'days_remaining_at_purchase',
+   
     'storage_temp',
+   
     'temp_deviation',
+   
     'initial_quantity',
+   
     'spoilage_sensitivity',
+   
     'daily_demand',
+   
     'demand_variability',
+   
     'temp_abuse_events',
+   
     'distribution_hours',
+   
     'handling_score',
+   
     'packaging_score',
+   
     'supplier_score
 
 **RESEARCH QUESTION**
@@ -104,7 +120,9 @@ The project includes visualizations such as:
 **Machine Learning Models**
 
 The following supervised learning algorithms are evaluated:
+   
     Logistic Regression
+   
     Random Forest
 
 **Model Evaluation**
