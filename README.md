@@ -82,12 +82,19 @@ Several columns were intentionally removed because they become available after s
 Examples include:
 
   Selling Price
+ 
   Discount Percentage
+  
   Revenue
+  
   Profit
+  
   Units Sold
+ 
   Units Wasted
+ 
   Waste Cost
+ 
   Profit Margin
 
 Removing these variables prevents data leakage, allowing the model to learn only from information available before prediction.
@@ -97,13 +104,21 @@ Removing these variables prevents data leakage, allowing the model to learn only
 The notebook follows these stages:
 
   Data Collection
+  
   Data Cleaning
+  
   Exploratory Data Analysis (EDA)
+  
   Statistical Analysis
+  
   Feature Engineering
+ 
   Data Preprocessing
+ 
   Train / Validation / Test Split
+  
   Model Training
+  
   Model Evaluation
 
 **Exploratory Data Analysis**
@@ -111,10 +126,15 @@ The notebook follows these stages:
 The project includes visualizations such as:
 
   Target variable distribution
+  
   Feature distributions
+  
   Correlation heatmap
+  
   Boxplots
+  
   Histograms
+  
   Count plots  
 
 **Machine Learning Models**
@@ -130,8 +150,11 @@ The following supervised learning algorithms are evaluated:
 Models are compared using:
 
   Accuracy
+ 
   Precision
+ 
   Recall
+  
   F1-Score
 
 **TEAM MEMBERS**
@@ -144,11 +167,15 @@ Models are compared using:
 
 **TASKS ALLOCATION**
 
-Gladys Ngadjui: data collection and cleaning
-Krishna Priya: data pre-processing, EDA, data visualisation
-Kanika Sethi: statistical analysis, correlation, feature engineering 
-Hansel Veigas: ML model development, training and comparison
-Teena Elvisha Ferrao: model evaluation, feature importance analysis, final report and presentation
+      Gladys Ngadjui: data collection and cleaning
+    
+      Krishna Priya: data pre-processing, EDA, data visualisation
+     
+      Kanika Sethi: statistical analysis, correlation, feature engineering 
+      
+      Hansel Veigas: ML model development, training and comparison
+      
+      Teena Elvisha Ferrao: model evaluation, feature importance analysis, final report and presentation
 
 **TECHNOLOGY USED**
 
