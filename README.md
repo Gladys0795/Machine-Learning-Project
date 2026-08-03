@@ -10,6 +10,12 @@ This project develops a binary classification machine learning model that predic
 
 The project follows a complete end-to-end machine learning workflow, including data preprocessing, exploratory data analysis (EDA), feature engineering, model development, evaluation, and interpretation.
 
+**RESEARCH QUESTION**
+
+Can machine learning accurately predict the spoilage risk level of perishable retail products from storage, handling, and product features by using only information available before the sales outcome to support inventory management and reduce food waste?
+
+**Data Set**
+
 The original dataset is a synthetically generated retail dataset containing information about perishable products.
 
       Original Records: **100,000**
@@ -69,11 +75,7 @@ The model uses only information available before spoilage occurs.
    
     'packaging_score',
    
-    'supplier_score
-
-**RESEARCH QUESTION**
-
-Can machine learning accurately predict the spoilage risk level of perishable retail products from storage, handling, and product features by using only information available before the sales outcome to support inventory management and reduce food waste?
+    'supplier_score'
 
 **Data Leakage Prevention**
 
