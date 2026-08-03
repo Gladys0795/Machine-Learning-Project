@@ -13,7 +13,9 @@ The project follows a complete end-to-end machine learning workflow, including d
 The original dataset is a synthetically generated retail dataset containing information about perishable products.
 
 Original Records: **100,000**
+
 Original Features:**42**
+
 Missing Values: **None**
 Dataset Used: **Cleaned & Balanced**
 Final Records: **38,884**
