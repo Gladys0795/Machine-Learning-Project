@@ -12,23 +12,23 @@ The project follows a complete end-to-end machine learning workflow, including d
 
 The original dataset is a synthetically generated retail dataset containing information about perishable products.
 
-Original Records: **100,000**
+      Original Records: **100,000**
 
-Original Features:**42**
+      Original Features:**42**
 
-Missing Values: **None**
+      Missing Values: **None**
 
-Dataset Used: **Cleaned & Balanced**
+      Dataset Used: **Cleaned & Balanced**
 
-Final Records: **38,884**
+      Final Records: **38,884**
 
-Target Variable: **was_spoiled**
+      Target Variable: **was_spoiled**
 
-Target Variable: 
+**Target Variable:**
 
-**0	- Not Spoiled**
+      **0	- Not Spoiled**
    
-**1 - Spoiled**
+      **1 - Spoiled**
 
 The balanced dataset contains:
 
