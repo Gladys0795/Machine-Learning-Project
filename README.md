@@ -1,4 +1,4 @@
-**Food Spoilage Prediction Using Machine Learning**
+*Food Spoilage Prediction Using Machine Learning*
 
 ***Predicting whether a food product is likely to spoil using machine learning.***
 
