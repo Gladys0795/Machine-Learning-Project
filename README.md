@@ -78,7 +78,7 @@ Note: identifier columns (record_id, product_id, product_name, store_id, supplie
 10.	Model improvement (hyperparameter tuning, class-imbalance handling).
 11.	Business interpretation and recommendations.
 
-** 🤖MACHINE LEARNING TASKS**
+**MACHINE LEARNING TASKS**
 
 The primary task is multi-class classification of spoilage-risk level. Supporting activities include:
 
