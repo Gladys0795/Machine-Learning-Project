@@ -8,13 +8,22 @@ Food spoilage is a major cause of food waste, financial loss, and inefficient in
 
 This project develops a binary classification machine learning model that predicts whether a food product is likely to spoil using product characteristics, storage conditions, demand, and supply-chain information.
 
-The project follows a complete end-to-end machine learning workflow, including data preprocessing, exploratory data analysis (EDA), feature engineering, model development, evaluation, and interpretation.
+The project follows a complete end-to-end machine learning workflow, including data pre-processing, exploratory data analysis (EDA), feature engineering, model development, evaluation, and interpretation.
+
+**PROJECT DEFINITION** 
+
+Retailers largely rely on fixed expiry dates and manual inspection to judge whether perishable stock is at risk. These approaches are subjective, applied late, and do not combine the many operational factors - storage temperature deviation, handling quality, packaging quality, distribution time, product sensitivity - that jointly determine how quickly an item deteriorates.
+
+A model that estimates spoilage risk from information available at or before purchase would let businesses intervene earlier (markdown, redistribution, prioritised sale) instead of reacting after loss has occurred.
+
+This project therefore develops a binary classification model that predicts the spoilage risk of a perishable item from its storage and handling conditions and product attributes, using only features that are known before the sales outcome is realised.
+
 
 **RESEARCH QUESTION**
 
 Can machine learning accurately predict the spoilage risk level of perishable retail products from storage, handling, and product features by using only information available before the sales outcome to support inventory management and reduce food waste?
 
-**Data Set**
+**ABOUT THE DATA SET**
 
 The original dataset is a synthetically generated retail dataset containing information about perishable products.
 
@@ -47,6 +56,7 @@ The balanced dataset contains:
 **Selected Features**
 
 The model uses only information available before spoilage occurs.
+
     'category',
     
     'region',
@@ -81,7 +91,7 @@ The model uses only information available before spoilage occurs.
 
 Several columns were intentionally removed because they become available after spoilage or sales occur.
 
-Examples include:
+Such columns include:
 
   Selling Price
  
@@ -177,7 +187,7 @@ Models are compared using:
       
             Hansel Veigas: ML model development, training and comparison
       
-            Teena Elvisha Ferrao: model evaluation, feature importance analysis, final report and presentation
+            Teena Elvisha Ferrao: model evaluation and feature importance analysis
 
 **TECHNOLOGY USED**
 
